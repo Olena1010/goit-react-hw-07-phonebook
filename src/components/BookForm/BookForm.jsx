@@ -3,9 +3,8 @@ import * as Yup from 'yup';
 import { Formik } from 'formik';
 import { Form, FormField, Field, ErrorMessage, SubmitButton } from "./BookForm.styled"
 import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
-import { useSelector } from 'react-redux';
-import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/operations';
+import { useContacts } from 'hooks/useContacts';
 
 
 const BookSchema = Yup.object().shape({
@@ -25,7 +24,7 @@ const BookSchema = Yup.object().shape({
 
 export const BookForm = ({ closeModal }) => {
   const dispatch = useDispatch();
-  const contacts = useSelector(getContacts);
+   const contacts = useContacts();
   return (
     <Formik
       initialValues={{
