@@ -8,22 +8,22 @@ export const List = styled.ul`
   padding: 30px;
   width: 600px;
   height: auto;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
-  &::-webkit-scrollbar {
-    width: 7px;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 7px;
+  // }
 
-  &::-webkit-scrollbar-track {
-    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-    background-color: #f9f9fd;
-    border-radius: 10px;
-  }
+  // &::-webkit-scrollbar-track {
+  //   box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  //   background-color: #f9f9fd;
+  //   border-radius: 10px;
+  // }
 
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: linear-gradient(180deg, #ff69b4, #c71585);
-  }
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 10px;
+  //   background: linear-gradient(180deg, #ff69b4, #c71585);
+  // }
 `;
 
 export const Item = styled.li`
